@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  scrollbar-color: #2a3559 transparent;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", ui-sans-serif, system-ui;
+  background: radial-gradient(circle at top left, rgba(85, 98, 154, 0.3), transparent 55%),
+    radial-gradient(circle at 35% 20%, rgba(164, 246, 46, 0.15), transparent 45%),
+    #0b0f1a;
+  min-height: 100vh;
+}
+
+.glass {
+  background: rgba(15, 22, 38, 0.75);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(107, 124, 194, 0.2);
+}
+
+.scrollbar-thin::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-thumb {
+  background: #2a3559;
+  border-radius: 999px;
+}
+
+.scrollbar-thin::-webkit-scrollbar-track {
+  background: transparent;
+}
